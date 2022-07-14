@@ -52,3 +52,5 @@ RUN groupmod -o -g ${PGID} www-data && \
 RUN mkdir -p /var/www
 
 RUN chown -R www-data:www-data /var/www
+
+RUN docker-php-ext-install mysqli pdo pdo_mysql

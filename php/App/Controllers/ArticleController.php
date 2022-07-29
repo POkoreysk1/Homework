@@ -14,17 +14,11 @@ class ArticleController extends Controller
 
         $article = Article::findById($_GET['id']);
         $author = Article::getAuthorName($_GET['id']);
-//var_dump($article);
         $content = $this->getTwig()->render('/article.twig', [
             'article' => $article,'author' => $author,
         ]);
 
-
-
-
         echo $content;
-
-
     }
 }
 

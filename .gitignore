@@ -1,2 +1,9 @@
 .idea
 ./vendor
+/docker/*
+/data/*
+/docker-compose.yml
+/start.sh
+/backup-service/*
+.env
+/php/vendor/*

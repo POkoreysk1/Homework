@@ -1,0 +1,14 @@
+<h1>Новости</h1>
+
+
+{% for article in articles  %}
+    <article>
+        <h2>
+            <a href="?ctrl=ArticleController&id={{article.id}} ">
+                {{article.title}}
+            </a>
+        </h2>
+        <p>{{ article.content }}</p>
+    </article>
+    <hr>
+{%endfor %}

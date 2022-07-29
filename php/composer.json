@@ -1,0 +1,8 @@
+{
+  "require": {
+    "runn/valueobjects": "*",
+    "twig/twig": "3.*",
+    "ext-mysql_xdevapi": "*",
+    "ext-pdo": "*"
+  }
+}
